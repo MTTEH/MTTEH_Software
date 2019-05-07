@@ -8,6 +8,7 @@ I2C :
  - SDA0 : 
  
 AREF :
+
 GND : 
 
 Serial Port 0 : 
@@ -26,9 +27,7 @@ Pin Digital / PWM :
  - 10 : 
  - 11 : 
  - 12 : 
- - 13 : INBUILT_LED
-
-Extended Serial Ports : 
+ - 13 : INBUILT_LED 
 
 Pin Digital / Serial 1,2,3 :
  - 14 (TX) : 
