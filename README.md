@@ -69,21 +69,21 @@ Extended Pin Digital :
  - 42 : 
  - 43 : 
 
-Pin Digital / PWM :
+Extended Pin Digital / PWM :
  - 44 : 
  - 45 : 
  - 46 : 
 
-Pin Digital :
+Extended Pin Digital :
  - 47 : 
  - 48 : 
  - 49 : 
 
-Pin Digital / SPI :
- - 50 : 
- - 51 : 
- - 52 : 
- - 53 : 
+Extended Pin Digital / SPI :
+ - 50 (MISO) : 
+ - 51 (MOSI) : 
+ - 52 (SCK) : 
+ - 53 (SS) : 
 
 Branche GND :
  - GND : 
@@ -123,5 +123,3 @@ ICSP :
  - MOSI : OV5642
  - RESET : 
  - GND : 
- 
- 
