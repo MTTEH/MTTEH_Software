@@ -1,26 +1,25 @@
 # MTTEH Software
 
-## Assignation des pins de l'Arduino Mega.
-[Arduino MEGA diagram](https://www.theengineeringprojects.com/wp-content/uploads/2018/06/introduction-to-arduino-mega-5.png)
-
-Compostants :
+## Composants
  - OV5642  : Caméra
  - EF03051 : Gyroscope
  - MMA8451 : Acceleromètre
  - SRD8110 : TF-Mini
- - 
 
-I2C :
+## Assignation des pins de l'Arduino Mega.
+[Arduino MEGA diagram](https://www.theengineeringprojects.com/wp-content/uploads/2018/06/introduction-to-arduino-mega-5.png)
+
+### I2C
  - SCL0 : 
  - SDA0 : 
  
-AREF :
+### AREF
 
-Serial Port 0 : 
+### Serial Port 0
  - 0 (RX) : MEGA16U2 (Programmateur).
  - 1 (TX) : MEGA16U2 (Programmateur).
 
-Pin Digital / PWM : 
+### Pin Digital / PWM
  - 2 : 
  - 3 : 
  - 4 : 
@@ -34,7 +33,7 @@ Pin Digital / PWM :
  - 12 : 
  - 13 : INBUILT_LED 
 
-Pin Digital / Serial 1,2,3 :
+### Pin Digital / Serial 1, 2, 3
  - 14 (TX) : 
  - 15 (RX) : 
  - 16 (TX) : 
@@ -42,15 +41,15 @@ Pin Digital / Serial 1,2,3 :
  - 18 (TX) : 
  - 19 (RX) : 
 
-Pin Digital / I2C / Serial 4 :
+### Pin Digital / I2C / Serial 4
  - 20 (TX / SDA) : OV5642 / 
  - 21 (RX / SCL) : OV5642 / 
 
-Branche 5V :
+### Branche 5V
  - 5V : OV5642
  - 5V : 
 
-Extended Pin Digital :
+### Extended Pin Digital
  - 22 : 
  - 23 : 
  - 24 : 
@@ -74,23 +73,23 @@ Extended Pin Digital :
  - 42 : 
  - 43 : 
 
-Extended Pin Digital / PWM :
+### Extended Pin Digital / PWM
  - 44 : 
  - 45 : 
  - 46 : 
 
-Extended Pin Digital :
+### Extended Pin Digital
  - 47 : 
  - 48 : 
  - 49 : 
 
-Extended Pin Digital / SPI :
+### Extended Pin Digital / SPI
  - 50 (MISO) : 
  - 51 (MOSI) : 
  - 52 (SCK) : 
  - 53 (SS) : 
 
-Pin Entrée Analogique / Digitale :
+### Pin Entrée Analogique / Digitale
  - A1 : 
  - A2 : 
  - A3 : 
@@ -107,7 +106,7 @@ Pin Entrée Analogique / Digitale :
  - A14 : 
  - A15 : 
 
-Branche Alimentation :
+### Branche Alimentation
  - N/C : 
  - IOREF : 
  - RESET : 
@@ -115,7 +114,7 @@ Branche Alimentation :
  - 5V : 
  - Vin :
  
-ICSP : 
+### ICSP
  - MISO : OV5642
  - Vcc : 
  - SCK : OV5642
