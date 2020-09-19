@@ -1,9 +1,7 @@
 /*
- * [MTTEH] W.I.P. PRODUCTION CODE SK_Exemple
- * 
- * 
- * 
- */
+** [MTTEH] W.I.P. PRODUCTION CODE SK_Exemple
+**/
+
 #include <Wire.h>
 #include "Adafruit_SGP30.h"
 #include "Adafruit_MCP9808.h"

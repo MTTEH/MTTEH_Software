@@ -1,6 +1,6 @@
 #include <Adafruit_Sensor.h>
-
 #include <Adafruit_MMA8451.h>
+
 mma = Adafruit_MMA8451();
 mma.begin()
   if (! mma.begin()) {

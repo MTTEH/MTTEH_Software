@@ -1,7 +1,6 @@
 // modified by Victor
 // to calculate UV index directly
 void setup(){
-
     Serial.begin(9600);
 }
 

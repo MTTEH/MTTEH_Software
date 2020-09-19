@@ -52,7 +52,7 @@ void setup(void)
 void loop()
 {
  Lecture_Module();
- 
+
  Serial.print("X="); // Display of components in the serial monitor
  Serial.print (composante_X);
  Serial.print('\t'); // tabulation
@@ -120,7 +120,7 @@ void Init_L3G4200D(int echelle)
  composante_LSB_Z=Lecture_Registre(REGISTRE_LSB_Z); // lecture LSB_Z
  composante_Z=((composante_MSB_Z << 8) | composante_LSB_Z); // Component reconstruction_Z
  }
- 
+
 // Reading a register from the module L3G4200D
 int Lecture_Registre(byte registre)
 {
