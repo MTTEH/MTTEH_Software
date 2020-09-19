@@ -10,3 +10,6 @@
 [submodule "MTTEH/librairies/Adafruit_Sensor"]
 	path = MTTEH/librairies/Adafruit_Sensor
 	url = git@github.com:adafruit/Adafruit_Sensor.git
+[submodule "MTTEH/librairies/Adafruit_MMA8451_Library"]
+	path = MTTEH/librairies/Adafruit_MMA8451_Library
+	url = git@github.com:adafruit/Adafruit_MMA8451_Library.git
