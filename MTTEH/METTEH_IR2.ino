@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include <mtteh.h>
+#include <MTTEH.h>
 
 byte vitesse1 = 100;
 byte vitesse2 = 100;
