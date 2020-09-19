@@ -4,3 +4,6 @@
 [submodule "MTTEH/librairies/Adafruit_SGP30"]
 	path = MTTEH/librairies/Adafruit_SGP30
 	url = git@github.com:adafruit/Adafruit_SGP30.git
+[submodule "MTTEH/librairies/MTTEH_Library"]
+	path = MTTEH/librairies/MTTEH_Library
+	url = git@github.com:MTTEH/MTTEH_Library.git
