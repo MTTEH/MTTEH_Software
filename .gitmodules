@@ -1,0 +1,3 @@
+[submodule "MTTEH/librairies/Adafruit_MCP9808_Library"]
+	path = MTTEH/librairies/Adafruit_MCP9808_Library
+	url = git@github.com:adafruit/Adafruit_MCP9808_Library.git
