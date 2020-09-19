@@ -1,13 +1,15 @@
 # MTTEH Software
 Module Tout Terrain d'Exploration en millieu Hostile
 
-## Composants
- - OV5642  : Caméra
+## Components
+ - OV5642  : Camera
  - EF03051 : Gyroscope
- - MMA8451 : Acceleromètre
+ - MMA8451 : Accelerometer
  - SRD8110 : TF-Mini
+ - MCP9808 : Temperature Sensor
+ - SGP30 : Gas Sensor
 
-## Assignation des pins de l'Arduino Mega.
+## PIN assignation for the Arduino MEGA 2560
 ![Arduino MEGA diagram](https://www.theengineeringprojects.com/wp-content/uploads/2018/06/introduction-to-arduino-mega-5.png)
 
 ### I2C
@@ -17,10 +19,10 @@ Module Tout Terrain d'Exploration en millieu Hostile
 ### AREF
 
 ### Serial Port 0
- - 0 (RX) : MEGA16U2 (Programmateur).
- - 1 (TX) : MEGA16U2 (Programmateur).
+ - 0 (RX) : MEGA16U2 (Programmer).
+ - 1 (TX) : MEGA16U2 (Programmer).
 
-### Pin Digital / PWM
+### Digital PIN / PWM
  - 2 : 
  - 3 : 
  - 4 : 
@@ -34,7 +36,7 @@ Module Tout Terrain d'Exploration en millieu Hostile
  - 12 : 
  - 13 : INBUILT_LED 
 
-### Pin Digital / Serial 1, 2, 3
+### Digital PIN / Serial 1, 2, 3
  - 14 (TX) : 
  - 15 (RX) : 
  - 16 (TX) : 
@@ -42,15 +44,15 @@ Module Tout Terrain d'Exploration en millieu Hostile
  - 18 (TX) : 
  - 19 (RX) : 
 
-### Pin Digital / I2C / Serial 4
+### Digital PIN / I2C / Serial 4
  - 20 (TX / SDA) : OV5642 / 
  - 21 (RX / SCL) : OV5642 / 
 
-### Branche 5V
+### 5V Power block
  - 5V : OV5642
  - 5V : 
 
-### Extended Pin Digital
+### Extended Digital PIN
  - 22 : 
  - 23 : 
  - 24 : 
@@ -74,23 +76,23 @@ Module Tout Terrain d'Exploration en millieu Hostile
  - 42 : 
  - 43 : 
 
-### Extended Pin Digital / PWM
+### Extended Digital PIN with PWM
  - 44 : 
  - 45 : 
  - 46 : 
 
-### Extended Pin Digital
+### Extended Digital PIN
  - 47 : 
  - 48 : 
  - 49 : 
 
-### Extended Pin Digital / SPI
+### Extended Digital PIN / SPI
  - 50 (MISO) : 
  - 51 (MOSI) : 
  - 52 (SCK) : 
  - 53 (SS) : 
 
-### Pin Entrée Analogique / Digitale
+### Analog / Digital PIN
  - A1 : 
  - A2 : 
  - A3 : 
@@ -107,7 +109,7 @@ Module Tout Terrain d'Exploration en millieu Hostile
  - A14 : 
  - A15 : 
 
-### Branche Alimentation
+### Power block
  - N/C : 
  - IOREF : 
  - RESET : 
