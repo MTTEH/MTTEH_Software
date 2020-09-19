@@ -4,7 +4,8 @@
 
 #include "MTTEH_Project.h"
 
-void setup() {
+void setup()
+{
     Serial.begin(115200);
     wait_for(Serial);
 
@@ -13,7 +14,8 @@ void setup() {
     init_MCP9808();
 }
 
-void loop() {
+void loop()
+{
     static int counter = 0;
     static float temp_c = 0.0;
     static float temp_f = 0.0;
@@ -29,21 +31,21 @@ void loop() {
         orientation = get_orientation_MMA8451();
 
         switch (orientation) {
-            case MMA8451_PL_PUF: 
+            case MMA8451_PL_PUF:
                 Serial.println("Portrait Up Front");
-            case MMA8451_PL_PUB: 
-                Serial.println("Portrait Up Back");   
-            case MMA8451_PL_PDF: 
+            case MMA8451_PL_PUB:
+                Serial.println("Portrait Up Back");
+            case MMA8451_PL_PDF:
                 Serial.println("Portrait Down Front");
-            case MMA8451_PL_PDB: 
+            case MMA8451_PL_PDB:
                 Serial.println("Portrait Down Back");
-            case MMA8451_PL_LRF: 
+            case MMA8451_PL_LRF:
                 Serial.println("Landscape Right Front");
-            case MMA8451_PL_LRB: 
+            case MMA8451_PL_LRB:
                 Serial.println("Landscape Right Back");
-            case MMA8451_PL_LLF: 
+            case MMA8451_PL_LLF:
                 Serial.println("Landscape Left Front");
-            case MMA8451_PL_LLB: 
+            case MMA8451_PL_LLB:
                 Serial.println("Landscape Left Back");
         }
     }
@@ -56,12 +58,12 @@ void loop() {
         get_resolution_MCP9808();
         temp_c = get_temperature_C_MCP9808();
         temp_f = get_temperature_F_MCP9808();
-        Serial.println("Temp: "); 
+        Serial.println("Temp: ");
         Serial.print(temp_c, 4);
-        Serial.println("°C."); 
+        Serial.println("°C.");
         Serial.print(temp_f, 4);
         Serial.println("°F.");
-        
+
         delay(2000);
         stop_MCP9808();
     }

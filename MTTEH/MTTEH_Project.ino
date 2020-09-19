@@ -1,18 +1,18 @@
 /*
 ** MTTEH Main Software
 ** https://github.com/MTTEH/MTTEH_Software
-** 
+**
 ** Authors :
 **  - Narutarded (https://github.com/narutarder).
 **  - Kiradae (https://github.com/Kiradae).
 **  - GGLinnk (https://github.com/GGLinnk) <gglinnk@protonmail.com>.
 **  - Wabia (https://github.com/wabia).
-** 
+**
 ** Licence GPLv3
 **
 ** Lycée Frédéric Ozanam | Cesson-Sévigné | 2018-2019
 ** Personal Project      | World          | 2018-2020
-** 
+**
 **/
 
 #include "MTTEH_Project.h"
@@ -24,7 +24,8 @@ void trigger()
     digitalWrite(TRIGGER_PIN, LOW);
 }
 
-void setup() {
+void setup()
+{
     Serial.begin(115200);
 
     pinMode(MAvD1, OUTPUT);
@@ -44,6 +45,6 @@ void setup() {
     digitalWrite(TRIGGER_PIN, LOW);
 }
 
-void loop() {
-
+void loop()
+{
 }
