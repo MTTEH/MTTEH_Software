@@ -53,3 +53,17 @@ void turn_left()
   analogWrite(MAvD2, SECOND_SPEED);
   analogWrite(MArD2, SECOND_SPEED);
 }
+
+void short_movement_test()
+{
+  move_ahead();
+  delay(500);
+  move_back();
+  delay(500);
+  turn_right();
+  delay(500);
+  turn_left();
+  delay(500);
+  stop_moving();
+  delay(500);
+}
