@@ -1,11 +1,5 @@
-const int MAvD1 = 2;
-const int MAvD2 = 3;
-const int MAvG1 = 4;
-const int MAvG2 = 5;
-const int MArD1 = 6;
-const int MArD2 = 7;
-const int MArG1 = 8;
-const int MArG2 = 9;
+#include <Arduino.h>
+#include <mtteh.h>
 
 byte vitesse1 = 100;
 byte vitesse2 = 100;
