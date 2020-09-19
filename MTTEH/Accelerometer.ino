@@ -17,6 +17,7 @@
 */
 /**************************************************************************/
 
+#include <Arduino.h>
 #include <Wire.h>
 #include <Adafruit_MMA8451.h>
 #include <Adafruit_Sensor.h>

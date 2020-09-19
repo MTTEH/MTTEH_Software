@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_MMA8451.h>
 

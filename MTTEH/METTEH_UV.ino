@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 // modified by Victor
 // to calculate UV index directly
 void setup(){

@@ -28,6 +28,7 @@
 #define REGISTRE_LSB_Z 0x2C // LSB axe Z
 
 // call library
+#include <Arduino.h>
 #include <Wire.h>
 
 int composante_X;
