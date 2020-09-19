@@ -7,3 +7,6 @@
 [submodule "MTTEH/librairies/MTTEH_Library"]
 	path = MTTEH/librairies/MTTEH_Library
 	url = git@github.com:MTTEH/MTTEH_Library.git
+[submodule "MTTEH/librairies/Adafruit_Sensor"]
+	path = MTTEH/librairies/Adafruit_Sensor
+	url = git@github.com:adafruit/Adafruit_Sensor.git
