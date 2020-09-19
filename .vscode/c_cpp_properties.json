@@ -11,6 +11,7 @@
             "cStandard": "c11",
             "cppStandard": "c++17",
             "defines": [
+                "USBCON",
                 "ARDUINO=108013"
             ]
         }
