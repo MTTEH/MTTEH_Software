@@ -1,13 +1,10 @@
-#include <Arduino.h>
-#include <Wire.h>
-#include <Adafruit_MMA8451.h>
-#include <Adafruit_Sensor.h>
+#include "MTTEH_Project.h"
 
 Adafruit_MMA8451 mma = Adafruit_MMA8451();
 
 void setup(void) {
   
-  Serial.begin(9600);
+  Serial.begin(115200);
   
   Serial.println("Adafruit MMA8451 test!");
   

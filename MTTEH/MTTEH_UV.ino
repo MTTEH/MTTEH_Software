@@ -1,4 +1,4 @@
-#include <Arduino.h>
+#include "MTTEH_Project.h"
 
 // modified by Victor
 // to calculate UV index directly
