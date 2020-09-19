@@ -1,13 +1,5 @@
 #include "MTTEH_Project.h"
 
-void setup()
-{
-  Serial.begin(115200);
-
-  pinMode(SENSOR_PIN, INPUT);
-  pinMode(INDICATOR_PIN, OUTPUT);
-}
-
 void loop()
 {
   static long randNumber = 0;
