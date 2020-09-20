@@ -15,7 +15,10 @@
 **
 **/
 
-#include "MTTEH_Project.h"
+#include "MTTEH_Project.hpp"
+
+const unsigned long timeout_measure = 25000UL;
+const float sound_speed = 340.0 / 1000;
 
 void trigger()
 {
@@ -47,4 +50,5 @@ void setup()
 
 void loop()
 {
+    
 }
