@@ -2,8 +2,8 @@
 
 #include <MTTEH.h>
 
-#ifndef MTTEH_H_
-    #define MTTEH_H_
+#ifndef MTTEH_PROJECT_H_
+    #define MTTEH_PROJECT_H_
 
     #define TRIGGER_PIN   10
     #define ECHO_PIN      11
@@ -12,4 +12,4 @@
 
 void trigger();
 
-#endif    // MTTEH_H_
+#endif    // MTTEH_PROJECT_H_
