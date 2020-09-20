@@ -28,7 +28,7 @@
 #define REGISTRE_LSB_Z   0x2C    // LSB axe Z
 
 // call library
-#include "MTTEH_Project.h"
+#include "MTTEH_Project.hpp"
 
 int composante_X;
 int composante_Y;
