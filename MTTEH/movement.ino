@@ -1,69 +1,68 @@
-#include "movement.h"
+#include "movement.hpp"
 
-void stop_moving()
+void Move::stop()
 {
-    analogWrite(MAvD1, 0);
-    analogWrite(MArD1, 0);
-    analogWrite(MAvD2, 0);
-    analogWrite(MArD2, 0);
-    analogWrite(MAvG1, 0);
-    analogWrite(MArG1, 0);
-    analogWrite(MAvD2, 0);
-    analogWrite(MArD2, 0);
+    analogWrite(RIGHT_FRONT_MOTOR_CR, NO_SPEED);
+    analogWrite(RIGHT_BACK_MOTOR_CR, NO_SPEED);
+    analogWrite(RIGHT_FRONT_MOTOR_ACR, NO_SPEED);
+    analogWrite(RIGHT_BACK_MOTOR_ACR, NO_SPEED);
+    analogWrite(LEFT_FRONT_MOTOR_CR, NO_SPEED);
+    analogWrite(LEFT_BACK_MOTOR_CR, NO_SPEED);
+    analogWrite(RIGHT_FRONT_MOTOR_ACR, NO_SPEED);
+    analogWrite(RIGHT_BACK_MOTOR_ACR, NO_SPEED);
 
-    delay(20);
+    delay(MOVE_STOP_SAFE_DELAY_MS);
 }
 
-void move_ahead()
+void Move::forward()
 {
-    stop_moving();
+    stop();
 
-    analogWrite(MAvD1, FIRST_SPEED);
-    analogWrite(MArD1, FIRST_SPEED);
-    analogWrite(MAvG1, SECOND_SPEED);
-    analogWrite(MArG1, SECOND_SPEED);
+    analogWrite(RIGHT_FRONT_MOTOR_CR, HIGH_SPEED);
+    analogWrite(RIGHT_BACK_MOTOR_CR, HIGH_SPEED);
+    analogWrite(LEFT_FRONT_MOTOR_CR, HIGH_SPEED);
+    analogWrite(LEFT_BACK_MOTOR_CR, HIGH_SPEED);
 }
 
-void move_back()
+void Move::backward()
 {
-    stop_moving();
+    stop();
 
-    analogWrite(MAvD2, FIRST_SPEED);
-    analogWrite(MArD2, FIRST_SPEED);
-    analogWrite(MAvD2, SECOND_SPEED);
-    analogWrite(MArD2, SECOND_SPEED);
+    analogWrite(RIGHT_FRONT_MOTOR_ACR, HIGH_SPEED);
+    analogWrite(RIGHT_BACK_MOTOR_ACR, HIGH_SPEED);
+    analogWrite(RIGHT_FRONT_MOTOR_ACR, HIGH_SPEED);
+    analogWrite(RIGHT_BACK_MOTOR_ACR, HIGH_SPEED);
 }
 
-void turn_right()
+void Move::right()
 {
-    stop_moving();
+    stop();
 
-    analogWrite(MAvD2, FIRST_SPEED);
-    analogWrite(MArD2, FIRST_SPEED);
-    analogWrite(MAvG1, SECOND_SPEED);
-    analogWrite(MArG1, SECOND_SPEED);
+    analogWrite(RIGHT_FRONT_MOTOR_ACR, HIGH_SPEED);
+    analogWrite(RIGHT_BACK_MOTOR_ACR, HIGH_SPEED);
+    analogWrite(LEFT_FRONT_MOTOR_CR, HIGH_SPEED);
+    analogWrite(LEFT_BACK_MOTOR_CR, HIGH_SPEED);
 }
 
-void turn_left()
+void Move::left()
 {
-    stop_moving();
+    stop();
 
-    analogWrite(MAvD1, FIRST_SPEED);
-    analogWrite(MArD1, FIRST_SPEED);
-    analogWrite(MAvD2, SECOND_SPEED);
-    analogWrite(MArD2, SECOND_SPEED);
+    analogWrite(RIGHT_FRONT_MOTOR_CR, HIGH_SPEED);
+    analogWrite(RIGHT_BACK_MOTOR_CR, HIGH_SPEED);
+    analogWrite(RIGHT_FRONT_MOTOR_ACR, HIGH_SPEED);
+    analogWrite(RIGHT_BACK_MOTOR_ACR, HIGH_SPEED);
 }
 
-void short_movement_test()
+void Move::short_test()
 {
-    move_ahead();
+    forward();
     delay(500);
-    move_back();
+    backward();
     delay(500);
-    turn_right();
+    right();
     delay(500);
-    turn_left();
+    left();
     delay(500);
-    stop_moving();
-    delay(500);
+    stop();
 }

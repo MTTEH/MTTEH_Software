@@ -1,4 +1,4 @@
-#include "movement.h"
+#include "movement.hpp"
 
 #include <MTTEH.hpp>
 
@@ -9,6 +9,8 @@
     #define ECHO_PIN      11
     #define SENSOR_PIN    12
     #define INDICATOR_PIN 13
+
+    #define MIN_DISTANCE 20
 
 void trigger();
 

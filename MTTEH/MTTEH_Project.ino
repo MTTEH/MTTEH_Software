@@ -31,14 +31,14 @@ void setup()
 {
     Serial.begin(115200);
 
-    pinMode(MAvD1, OUTPUT);
-    pinMode(MAvD2, OUTPUT);
-    pinMode(MAvG1, OUTPUT);
-    pinMode(MAvG1, OUTPUT);
-    pinMode(MArD1, OUTPUT);
-    pinMode(MArD1, OUTPUT);
-    pinMode(MArG1, OUTPUT);
-    pinMode(MArG1, OUTPUT);
+    pinMode(RIGHT_FRONT_MOTOR_CR, OUTPUT);
+    pinMode(RIGHT_FRONT_MOTOR_ACR, OUTPUT);
+    pinMode(LEFT_FRONT_MOTOR_CR, OUTPUT);
+    pinMode(LEFT_FRONT_MOTOR_CR, OUTPUT);
+    pinMode(RIGHT_BACK_MOTOR_CR, OUTPUT);
+    pinMode(RIGHT_BACK_MOTOR_CR, OUTPUT);
+    pinMode(LEFT_BACK_MOTOR_CR, OUTPUT);
+    pinMode(LEFT_BACK_MOTOR_CR, OUTPUT);
 
     pinMode(TRIGGER_PIN, OUTPUT);
     pinMode(ECHO_PIN, INPUT);
@@ -46,6 +46,8 @@ void setup()
     pinMode(INDICATOR_PIN, OUTPUT);
 
     digitalWrite(TRIGGER_PIN, LOW);
+
+    randomSeed(analogRead(0));
 }
 
 void loop()
