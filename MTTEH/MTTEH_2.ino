@@ -27,21 +27,23 @@ void wait_for_distance(float distance)
     while (get_distance() <= distance) {};
 }
 
-void turn_until_distance(float distance, void (*direction)())
+void turn_until_distance(float distance, MTTEH *mtteh, void (Move::*direction)())
 {
-    (*direction)();
+    (mtteh->movement.*direction)();
     wait_for_distance(distance);
-    stop_moving();
+    mtteh->movement.stop();
 }
 
 void auto_move()
 {
-    move_ahead();
+    MTTEH mtteh = MTTEH();
+    mtteh.movement = Move();
+    mtteh.movement.forward();
     if (get_distance() <= MIN_DISTANCE) {
         if (random(2))
-            turn_until_distance(MIN_DISTANCE, &turn_right);
+            turn_until_distance(MIN_DISTANCE, &mtteh, &Move::right);
         else
-            turn_until_distance(MIN_DISTANCE, &turn_left);
+            turn_until_distance(MIN_DISTANCE, &mtteh, &Move::left);
     }
-    stop_moving();
+    mtteh.movement.stop();
 }

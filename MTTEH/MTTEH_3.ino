@@ -1,10 +1,9 @@
 #include "MTTEH_Project.hpp"
 
-const float timeout_measure = 000267F;
-const float light_speed = 299792458.0 / 1000;
-
 void loop()
 {
+    float timeout_measure = 000267F;
+    float light_speed = 299792458.0 / 1000;
     trigger();
     long measure = pulseIn(ECHO_PIN, HIGH, timeout_measure);
     float distance_cm = measure / 2.0 * light_speed;

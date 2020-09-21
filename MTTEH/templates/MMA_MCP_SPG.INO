@@ -9,13 +9,15 @@ void setup()
     Serial.begin(115200);
     wait_for(Serial);
 
-    init_MMA8451();
+    MMA8451().init();
     init_SGP30();
     init_MCP9808();
 }
 
 void loop()
 {
+    MTTEH mtteh = MTTEH();
+    mtteh.mma8451 = MMA8451();
     static int counter = 0;
     static float temp_c = 0.0;
     static float temp_f = 0.0;
@@ -24,11 +26,16 @@ void loop()
     static uint8_t orientation = 0;
 
     /* MMA (Gyroscope/Accelerometer) */ {
-        read_MMA8451();
-        print_all_MMA8451();
-        get_event_MMA8451();
-        print_all_event_MMA8451();
-        orientation = get_orientation_MMA8451();
+        mtteh.mma8451.sensor.read();
+        mtteh.mma8451.show_X();
+        mtteh.mma8451.show_Y();
+        mtteh.mma8451.show_Z();
+        Serial.println("");
+        mtteh.mma8451.event.get_event();
+        mtteh.mma8451.event.show_X();
+        mtteh.mma8451.event.show_Y();
+        mtteh.mma8451.event.show_Z();
+        orientation = mtteh.mma8451.get_orientation();
 
         switch (orientation) {
             case MMA8451_PL_PUF:

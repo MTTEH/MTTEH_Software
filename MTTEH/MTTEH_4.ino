@@ -2,6 +2,8 @@
 
 void loop()
 {
+    MTTEH mtteh = MTTEH();
+    mtteh.movement = Move();
     static long randNumber = 0;
     byte state = 0;
 
@@ -12,23 +14,23 @@ void loop()
     if (state == 1) {
         randNumber = random(2);
         while ((randNumber == 0) && (state == 1)) {
-            turn_right();
+            mtteh.movement.right();
             randNumber = random(5, 20);
             delay(randNumber);
-            stop_moving();
+            mtteh.movement.stop();
             state = digitalRead(SENSOR_PIN);
             digitalWrite(INDICATOR_PIN, state);
             delay(1000);
         }
         while ((randNumber == 1) && (state == 1)) {
-            turn_left();
+            mtteh.movement.left();
             randNumber = random(5, 20);
             delay(randNumber);
-            stop_moving();
+            mtteh.movement.stop();
             state = digitalRead(SENSOR_PIN);
             digitalWrite(INDICATOR_PIN, state);
             delay(1000);
         }
     } else
-        move_ahead();
+        mtteh.movement.forward();
 }
