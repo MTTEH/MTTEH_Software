@@ -7,8 +7,6 @@ void loop()
     trigger();
     long measure = pulseIn(ECHO_PIN, HIGH, timeout_measure);
     float distance_cm = measure / 2.0 * light_speed;
-    Serial.print("Distance: ");
-    Serial.print(distance_cm);
-    Serial.println("cm");
+    Serial.println("Distance: " + String(distance_cm) + "cm.");
     delay(200);
 }
