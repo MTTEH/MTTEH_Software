@@ -93,6 +93,7 @@ Module Tout Terrain d'Exploration en millieu Hostile
  - 53 (SS) : 
 
 ### Analog / Digital PIN
+ - A0 : Do not use (randomSeed)
  - A1 : 
  - A2 : 
  - A3 : 
