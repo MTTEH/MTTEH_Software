@@ -13,6 +13,3 @@
 [submodule "MTTEH/librairies/Adafruit_MMA8451_Library"]
 	path = MTTEH/librairies/Adafruit_MMA8451_Library
 	url = git@github.com:adafruit/Adafruit_MMA8451_Library.git
-[submodule "MTTEH/librairies/MTTEH_MMA8451"]
-	path = MTTEH/librairies/MTTEH_MMA8451
-	url = git@github.com:MTTEH/MTTEH_MMA8451.git
