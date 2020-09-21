@@ -3,4 +3,5 @@
     "editor.formatOnSave": false,
     "C_Cpp.clang_format_fallbackStyle": "LLVM",
     "C_Cpp.clang_format_style": "file",
+    "typescript.tsserver.experimental.enableProjectDiagnostics": true
 }
