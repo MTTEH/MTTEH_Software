@@ -2,7 +2,7 @@
 
 void loop()
 {
-    float timeout_measure = 000267F;
+    float timeout_measure = 0.000267F;
     float light_speed = 299792458.0 / 1000;
     trigger();
     long measure = pulseIn(ECHO_PIN, HIGH, timeout_measure);
